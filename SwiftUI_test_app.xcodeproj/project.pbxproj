@@ -13,6 +13,8 @@
 		047199DB24C846FE009F5451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047199DA24C846FE009F5451 /* Assets.xcassets */; };
 		047199DE24C846FE009F5451 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047199DD24C846FE009F5451 /* Preview Assets.xcassets */; };
 		047199E124C846FE009F5451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047199DF24C846FE009F5451 /* LaunchScreen.storyboard */; };
+		047199ED24C858C4009F5451 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047199EC24C858C4009F5451 /* MapView.swift */; };
+		047199EF24C85B74009F5451 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047199EE24C85B74009F5451 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		047199DD24C846FE009F5451 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		047199E024C846FE009F5451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047199E224C846FE009F5451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047199EC24C858C4009F5451 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		047199EE24C85B74009F5451 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		047199C824C846FB009F5451 = {
 			isa = PBXGroup;
 			children = (
+				047199EE24C85B74009F5451 /* CircleImage.swift */,
+				047199EC24C858C4009F5451 /* MapView.swift */,
 				047199D324C846FC009F5451 /* SwiftUI_test_app */,
 				047199D224C846FC009F5451 /* Products */,
 			);
@@ -148,7 +154,9 @@
 			files = (
 				047199D524C846FC009F5451 /* AppDelegate.swift in Sources */,
 				047199D724C846FC009F5451 /* SceneDelegate.swift in Sources */,
+				047199ED24C858C4009F5451 /* MapView.swift in Sources */,
 				047199D924C846FC009F5451 /* ContentView.swift in Sources */,
+				047199EF24C85B74009F5451 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
