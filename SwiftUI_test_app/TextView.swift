@@ -10,13 +10,34 @@ import SwiftUI
 
 struct TextView: View {
     
+    @EnvironmentObject var userData: UserData
     var landmark: Landmark
+    
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex(where: {
+            $0.id == landmark.id
+        })!
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(landmark.name)
-                .font(.title)
-                .foregroundColor(.green)
+            HStack{
+                Text(landmark.name)
+                    .font(.title)
+                
+                Button(action: {
+                    self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                }) {
+                    if self.userData.landmarks[self.landmarkIndex].isFavorite {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(Color.yellow)
+                    } else {
+                        Image(systemName: "star")
+                            .foregroundColor(Color.gray)
+                    }
+                }
+            }
+            
             HStack(alignment: .top) {
                 Text(landmark.park)
                     .font(.subheadline)
@@ -25,12 +46,12 @@ struct TextView: View {
                     .font(.subheadline)
             }
         }
-//        .padding()
+        .padding()
     }
 }
 
 //struct TextView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        TextView(landmark: <#Landmark#>)
+//        TextView(landmark: LandmarkList)
 //    }
 //}

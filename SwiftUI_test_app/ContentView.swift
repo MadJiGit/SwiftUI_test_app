@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var userData: UserData
     var landmark: Landmark
     
     var body: some View {
@@ -20,10 +21,9 @@ struct ContentView: View {
                 .frame(height: 300)
             
             CircleImage(image: landmark.image)
-                .offset(y: -130)
+                .offset(x: 0, y: -130)
                 .padding(.bottom, -130)
-            
-            TextView(landmark: landmark)
+            TextView(userData: _userData, landmark: landmark)
                 .padding()
             
             Spacer()
